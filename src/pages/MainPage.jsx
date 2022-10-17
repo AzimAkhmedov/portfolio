@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../assets/images/logo.png'
 import './index.scss'
 import { Link } from 'react-router-dom'
@@ -9,6 +9,12 @@ const MainPage = () => {
   const nameArray = ['z', 'i', 'm']
   const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
+
+  useEffect(()=>{
+     setTimeout(()=>{
+      setLetter('text-animate-hover')
+    }, 4000)
+  } , [])
   return (
     <div>
 
@@ -18,11 +24,12 @@ const MainPage = () => {
             <span className={letter}>H</span>
             <span className={`${letter} _12`}>i,</span>
             <br />
-             
-              I'm
-              <img src={Logo} alt="" />
-              <AnimatedLetters letterClass={letter}  strArray={nameArray} idx={15} />
-            <AnimatedLetters letterClass={letter}  strArray={jobArray} idx={22} />
+            <span className={`${letter} _12`}>I'</span>
+            <span className={`${letter} _12`}>m</span>
+            <img src={Logo} alt="" />
+            <AnimatedLetters letterClass={letter} strArray={nameArray} idx={15} />
+            <br />
+            <AnimatedLetters letterClass={letter} strArray={jobArray} idx={22} />
 
           </h1>
           <h2>Front-end / React JS</h2>
