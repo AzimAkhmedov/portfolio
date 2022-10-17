@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Logo from '../assets/images/logo.png'
+import Loader from 'react-loaders'
 import './index.scss'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../components/AnimatedLetters/AnimatedLetters'
+import LogoSVG from '../components/Logo'
 
 const MainPage = () => {
   const [letter, setLetter] = useState('text-animate')
@@ -35,7 +37,9 @@ const MainPage = () => {
           <h2>Front-end / React JS</h2>
           <Link to={'/contact'} className='flat-button'> Contact Me</Link>
         </div>
+      <LogoSVG/>
       </div>
+      <Loader type="pacman" />
     </div>
   )
 }
