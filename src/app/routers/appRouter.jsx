@@ -7,15 +7,12 @@ import MainPage from '../../pages/Main/MainPage'
 const appRouter = () => {
 
   return (
-
-
     <Routes>
       <Route path='/' element={<Layout />} >
         <Route index element={<MainPage />} />
         <Route element={<About />} path='about' />
         <Route element={<Contact />} path='contacts' />
       </Route>
-
     </Routes>
   )
 }

@@ -34,7 +34,7 @@ const MainPage = () => {
 
             </h1>
             <h2>Front-end / React JS</h2>
-            <Link to={'/contact'} className='flat-button'> Contact Me</Link>
+            <Link to={'/contacts'} className='flat-button'> Contact Me</Link>
           </div>
           <LogoSVG />
         </div>
