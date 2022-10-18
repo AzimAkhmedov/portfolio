@@ -114,3 +114,40 @@
     }
   }
 }
+
+
+@media (max-width: 900px){
+  .top-tags{
+    top: 15px;
+  }
+  .tags{
+    font-size: 16px;
+  }
+  .container.contact-page,
+.container.about-page,
+.container.portfolio-page {
+     h1{
+      font-size: 30px !important;
+
+     }
+}
+ 
+}
+
+
+@media (max-width: 650px){
+  .top-tags{
+    top: 15px;
+  }
+  .tags{
+    font-size: 16px;
+  }
+  .container.contact-page,
+.container.about-page,
+.container.portfolio-page {
+  .text-zone{
+    margin-left: 35px;
+  }
+}
+ 
+}

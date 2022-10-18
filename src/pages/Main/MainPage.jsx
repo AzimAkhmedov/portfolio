@@ -8,7 +8,7 @@ import LogoSVG from '../../components/Logo'
 
 const MainPage = () => {
   const [letter, setLetter] = useState('text-animate')
-  const nameArray = ['z', 'i', 'm']
+  const nameArray = ['z','i','m']
   const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
   useEffect(() => {

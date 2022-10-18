@@ -133,3 +133,35 @@
         }
     }
 }
+
+
+
+
+@media (max-width: 900px){
+    .nav{
+          width: 40px;
+        .logo{
+            font-size: 16px;
+        }
+        nav{
+            ul{
+                li{
+                    a{
+                        padding: 2px;
+                        font-style: 16px;
+                        i{
+                          font-size: 12px;
+                        }   
+                        &::after{
+                         font-size: 16px;
+                        }
+                        &::before{
+                         font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+  }

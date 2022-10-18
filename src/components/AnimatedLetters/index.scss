@@ -21,3 +21,9 @@
         animation-delay: #{$i / 10}s;
     }
 }
+
+@media (max-width:700px){
+    .text-animate , .text-animate-hover{
+        min-width: 5px;
+    }
+}
