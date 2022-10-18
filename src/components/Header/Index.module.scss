@@ -1,33 +1,37 @@
 .nav{
     background: #181818;
-    width: 70px;
+    width: 60px;
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;
     z-index: 3;
     min-height: 500px;
-    padding-top: 20px;
 
     .logo{
         display: block;
-        text-align: center;
+        padding: 8px 0;
         text-decoration: none;
-        color: gray;
-
+        font-size: 20px;
         .img{
             display: block;
             height: auto;
 
  
             img{
-                width: 55px;
-                height: 55px ;
+           display: block;
+           margin: 8px auto;
+           width: 24px;
+           height: auto;
+
             }
-            &.subtitle{
-                width: 24px;
-                text-align: center;
-            }
+           
+        }
+        .subtitle{
+            width: 50px;
+            text-decoration: none;
+            color: #ffd700;
+            text-align: center;
+            margin-top: -15px;
         }
     }
     nav{
@@ -37,8 +41,8 @@
         height: 210px;
         top: 50%;
         margin-top: -120px;
-        padding-left: 20px;
-        
+        width: 100%;
+
         a{
             font-size: 25px;
             color: gray;
