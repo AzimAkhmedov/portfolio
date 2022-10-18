@@ -39,7 +39,7 @@ const About = () => {
                         I'm keen on web-dev and exactly in Front-end, but also going to learn Node js (Express, Back-end)
                     </p>
                     <p>
-                        Also I'm student of Akfa University (Tashkent, Freshman)
+                        I'm freshman in  Akfa University (Tashkent)
                     </p>
                 </div>
 

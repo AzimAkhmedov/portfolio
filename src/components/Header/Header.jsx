@@ -3,7 +3,7 @@ import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logo from '../../assets/images/logo.png'
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import s from './Index.module.scss'
 
 const Header = () => {
