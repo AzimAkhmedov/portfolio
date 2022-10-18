@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Layout from '../../components/Layout'
-import MainPage from '../../pages/MainPage'
+import MainPage from '../../pages/Main/MainPage'
 const appRouter = () => {
 
   return (
