@@ -1,60 +1,60 @@
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap-trial'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
+// import {  useRef } from 'react'
+// import gsap from 'gsap-trial'
+// import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
 import LogoS from '../../assets/images/line.png'
 import './index.scss'
 
 const LogoSVG = () => {
-  const bgRef = useRef()
-  const outlineLogoRef = useRef()
-  const solidLogoRef = useRef()
+  // const bgRef = useRef()
+  // const outlineLogoRef = useRef()
+  // const solidLogoRef = useRef()
 
-  useEffect(() => {
-    gsap.registerPlugin(DrawSVGPlugin)
+  // useEffect(() => {
+  //   gsap.registerPlugin(DrawSVGPlugin)
 
-    gsap
-      .timeline()
-      .to(bgRef.current, {
-        duration: 4,
-        opacity: 1,
-        zIndex: -2
-      })
-      .from(outlineLogoRef.current, {
-        drawSVG: 0,
-        duration: 20,
-        zIndex: -2
+  //   gsap
+  //     .timeline()
+  //     .to(bgRef.current, {
+  //       duration: 4,
+  //       opacity: 1,
+  //       zIndex: -2
+  //     })
+  //     .from(outlineLogoRef.current, {
+  //       drawSVG: 0,
+  //       duration: 20,
+  //       zIndex: -2
 
-      })
+  //     })
 
-    gsap.fromTo(
-      solidLogoRef.current,
-      {
-        opacity: 0,
-        zIndex: -2
+  //   gsap.fromTo(
+  //     solidLogoRef.current,
+  //     {
+  //       opacity: 0,
+  //       zIndex: -2
 
-      },
-      {
-        opacity: 1,
-        delay: 4,
-        duration: 4,
-        zIndex: -2
+  //     },
+  //     {
+  //       opacity: 1,
+  //       delay: 4,
+  //       duration: 4,
+  //       zIndex: -2
 
-      }
-    )
-  }, [])
+  //     }
+  //   )
+  // }, [])
 
   return (
-    <div className="logo-container" ref={bgRef}>
+    <div className="logo-container">
       <img
-        className="solid-logo"
-        ref={solidLogoRef}
+        // className="solid-logo"
+        // ref={solidLogoRef}
         src={LogoS}
 
         alt="JavaScript,  Developer"
       />
        <img
-        className="solid-logo"
-        ref={solidLogoRef}
+        // className="solid-logo"
+        // ref={solidLogoRef}
         src={LogoS}
 
         alt="JavaScript,  Developer"
@@ -66,7 +66,7 @@ const LogoSVG = () => {
           transform="translate(0 457) scale(.1 -.1)"
           fill="none"
         >
-          <path fill="none" ref={outlineLogoRef} d="M22,-27C29.2,-20.2,36.2,-13.9,37.7,-6.5C39.3,1,35.3,9.6,30.4,17.1C25.5,24.5,19.5,31,11.5,35.6C3.5,40.3,-6.6,43.2,-14.4,40.1C-22.2,37.1,-27.7,28.1,-29.8,19.5C-32,11,-30.9,2.9,-29.6,-5.3C-28.3,-13.5,-26.6,-21.7,-21.7,-28.9C-16.7,-36.2,-8.3,-42.5,-0.5,-42C7.4,-41.4,14.8,-33.9,22,-27Z" width="100%" height="100%" transform="translate(50 50)" strokeWidth="1" stroke="url(#sw-gradient)"></path>
+          <path fill="none"  d="M22,-27C29.2,-20.2,36.2,-13.9,37.7,-6.5C39.3,1,35.3,9.6,30.4,17.1C25.5,24.5,19.5,31,11.5,35.6C3.5,40.3,-6.6,43.2,-14.4,40.1C-22.2,37.1,-27.7,28.1,-29.8,19.5C-32,11,-30.9,2.9,-29.6,-5.3C-28.3,-13.5,-26.6,-21.7,-21.7,-28.9C-16.7,-36.2,-8.3,-42.5,-0.5,-42C7.4,-41.4,14.8,-33.9,22,-27Z" width="100%" height="100%" transform="translate(50 50)" strokeWidth="1" stroke="url(#sw-gradient)"></path>
         </g>
       </svg>
 
