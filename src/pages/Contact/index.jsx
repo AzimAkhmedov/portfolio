@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters'
@@ -20,7 +20,7 @@ const Contact = () => {
         e.preventDefault()
 
         emailjs
-            .sendForm('service_hhuhldn', 'template_hmmi6rf', form.current , 'GIymuuuy5_Givz_gO')
+            .sendForm('service_hhuhldn', 'template_hmmi6rf', form.current, 'GIymuuuy5_Givz_gO')
             .then(
                 () => {
                     alert('Message successfully sent!')
@@ -62,14 +62,7 @@ const Contact = () => {
                                         required
                                     />
                                 </li>
-                                <li>
-                                    <input
-                                        placeholder="Subject"
-                                        type="text"
-                                        name="subject"
-                                        required
-                                    />
-                                </li>
+
                                 <li>
                                     <textarea
                                         placeholder="Message"
@@ -84,24 +77,24 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-                {/* <div className="info-map">
-          Slobodan Gajić,
-          <br />
-          Serbia,
-          <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
-          <br />
-          <span>freelancerslobodan@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
-            </Marker>
-          </MapContainer>
-        </div> */}
+                <div className="info-map">
+
+                    <br />
+                    Tashkent,
+                    <br />
+                    Ok bilol 4, 7 <br />
+                    Uzbekistan <br />
+                    <br />
+                    <span>az.ah.qwerty@gmail.com</span>
+                </div>
+                <div className="map-wrap">
+                    <MapContainer center={[41.263814, 69.312718]} zoom={13}>
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <Marker position={[41.263814, 69.312718]}>
+                            <Popup>Azim lives here, come over for a cup of coffee :)</Popup>
+                        </Marker>
+                    </MapContainer>
+                </div>
             </div>
             <Loader type="pacman" />
         </>
