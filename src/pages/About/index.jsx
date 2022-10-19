@@ -14,6 +14,7 @@ import './index.scss'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const [loader , setLoader] = useState(true)
 
     useEffect(() => {
         setTimeout(() => {
@@ -21,7 +22,10 @@ const About = () => {
         }, 3000)
     }, [])
 
-    return (
+    useEffect(()=>{
+          setLoader(false)
+    },[])
+    return loader?(<Loader type='pacman' />): (
         <>
             <div className="container about-page">
                 <div className="text-zone">
@@ -66,7 +70,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <Loader type="pacman" />
+            {/* <Loader type="pacman" /> */}
         </>
     )
 }

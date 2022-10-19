@@ -39,7 +39,7 @@ const MainPage = () => {
           <LogoSVG />
         </div>
       </div>
-      <Loader type="pacman" />
+      {/* <Loader type="pacman" /> */}
     </>
   )
 }
