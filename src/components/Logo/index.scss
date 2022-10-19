@@ -18,7 +18,7 @@
     .off{
       opacity: 0;
     } .on{
-      opacity: 1 !important;
+      opacity: 1;
     }
   
   
@@ -55,15 +55,14 @@
 @keyframes lackMove{
   0%{
     transform: rotateZ(1deg);
-    transform: translateX(0px);
+    opacity: .1;
   }
-  50%{
-    transform: translateX(100px);
-    transform: rotateZ(179deg);
+  70%{
+    opacity: 1;
   }
   100%{
     transform: rotateZ(359deg);
-    transform: translateX(0px);
+    opacity: .1;
 
   }
 }
