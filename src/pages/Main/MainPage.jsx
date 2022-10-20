@@ -8,6 +8,7 @@ import LogoSVG from '../../components/Logo'
 
 const MainPage = () => {
   const [letter, setLetter] = useState('text-animate')
+  const [loader , setLoader] = useState(true);
   const nameArray = ['z','i','m']
   const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
@@ -15,8 +16,9 @@ const MainPage = () => {
     setTimeout(() => {
       setLetter('text-animate-hover')
     }, 4000)
+    setLoader(false)
   }, [])
-  return (
+  return loader? <Loader type='pacman' /> : (
     <>
       <div>
         <div className="container home-page">
@@ -39,7 +41,6 @@ const MainPage = () => {
           <LogoSVG />
         </div>
       </div>
-      {/* <Loader type="pacman" /> */}
     </>
   )
 }

@@ -8,12 +8,15 @@ import './index.scss'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const [loader, setLoader] = useState(true)
+
     const form = useRef()
 
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000)
+        setLoader(false)
     }, [])
 
     const sendEmail = (e) => {
@@ -32,7 +35,8 @@ const Contact = () => {
             )
     }
 
-    return (
+      {/* <Loader type="pacman" /> */}
+    return loader?<Loader type='pacman' /> : (
         <>
             <div className="container contact-page">
                 <div className="text-zone">

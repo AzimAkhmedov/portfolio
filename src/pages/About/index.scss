@@ -79,3 +79,20 @@
       transform: rotateX(90deg);
     }
   }
+  @media (max-width: 800px){
+    .stage-cube-cont{
+      width: 30%;
+      // z-index: 5;
+      padding-top: 40%;
+
+      .cubespinner{
+        div{
+        width: 120px;
+        height: 120px;
+        z-index: 5;
+        }
+      }
+
+    }
+  
+  }
