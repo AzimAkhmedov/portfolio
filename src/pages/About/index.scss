@@ -96,3 +96,34 @@
     }
   
   }
+
+
+
+  @media (max-width: 500px){
+    .stage-cube-cont{
+      position: relative;
+      border: 2px solid black;
+      overflow: visible;
+   
+      .cubespinner{
+    display: none;
+
+        div{
+        width: 120px;
+        height: 120px;
+        z-index: 5;
+        }
+      }
+
+    }
+    .stage-cube-cont::after{
+      display: block;
+      content: "-Tap me!";
+      color: rgba(128, 128, 128, 0.463);
+      position: absolute;
+      right: -100%;
+      top: 165px;
+
+      font-size: 13px;
+    }
+  }
